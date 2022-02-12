@@ -17,21 +17,21 @@ while True:
         if opponent == prompt:
             print(f"\nYou chose {prompt} \nOpponent chose {opponent} \nResult: DRAW! Try again.")
         
-        #user picks scissors
+        #opponent picks rock scenarios
         elif opponent == "Rock":
             if prompt == "Scissors":
                 print (f"\nYou chose {prompt} \nOpponent chose {opponent} \nResult: Rock beats scissors. You Lost.")
             else:
                 print(f"\nYou chose {prompt} \nOpponent chose {opponent} \nResult: Paper beats rock. YOU WON!.") 
         
-        #user picks rock
+        #opponent picks paper scenarios
         elif opponent == "Paper":
             if prompt == "Rock":
                 print (f"\nYou chose {prompt} \nOpponent chose {opponent} \nResult: Paper beats rock. You lost.")
             else:
                 print(f"\nYou chose {prompt} \nOpponent chose {opponent} \nResult: Scissors beats paper. YOU WON!")
 
-        #user picks rock
+        #opponent picks scissors scenarios
         elif opponent == "Scissors":
             if prompt == "Rock":
                 print (f"\nYou chose {prompt} \nOpponent chose {opponent} \nResult: Rock beats scissors. YOU WON!")
