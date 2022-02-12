@@ -14,7 +14,6 @@ def madLib():
     print('\n\nThis is {0}. He is from {2} {1}. He works for {4} as a {3}. {0} likes to {5} for fun.\n'
       .format(name, home, adj1, job, employer, hobby))
 
-
 play_again = input("Play Mad Libs? (y/n) ")
 
 if play_again == 'y':
