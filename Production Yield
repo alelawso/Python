@@ -1,0 +1,5 @@
+Total weight in KG
+------------------
+((% ST1 + % ST2)-
+(Current % ST1 + Current % ST2 + Current % Feeding Tank))
+* 
