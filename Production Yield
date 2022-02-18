@@ -1,5 +1,34 @@
-Total weight in KG
-------------------
-((% ST1 + % ST2)-
-(Current % ST1 + Current % ST2 + Current % Feeding Tank))
-* 
+'''Collagen Production Yield'''
+
+def Yield():
+    #all of the required inputs
+    weight_lbs = float(input('What is the total weight? '))/10
+
+    startinglevel_ST1 = float(input('What is the starting level of Tank 1? '))/10
+    startinglevel_ST2 = float(input('What is the starting level of Tank 2? '))/10
+
+    currentlevel_ST1 = float(input('What is the current level of Tank 1? '))/10
+    currentlevel_ST2 = float(input('What is the current level of Tank 2? '))/10
+
+    #NOTE: WHY 83.333?
+    currentlevel_FT = float(input('What is the current level of the Feed Tank? ')) * float(83.3333333333)
+
+    #NOTE: Why is this here & does it change?
+    expectedweight = float(24.043192)
+
+    currentbagcount = float(input('How many bags have been processed? '))
+
+    #levels
+    starting_levels = float(startinglevel_ST1 + startinglevel_ST2)
+    current_levels = float(currentlevel_ST1 + currentlevel_ST2 + currentlevel_FT)
+    
+    result = float(currentbagcount/(((starting_levels) - (current_levels))*expectedweight))
+    
+    #result
+    print(result)
+
+Yield()
+
+
+
+    
