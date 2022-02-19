@@ -1,3 +1,8 @@
+#Resources
+#https://www.youtube.com/watch?v=w6JqNyHNQnQ
+#https://www.youtube.com/watch?v=jOfbQnnllCw
+#https://www.tutorialspoint.com/How-to-print-current-date-and-time-using-Python
+
 # importing libraries
 from bs4 import BeautifulSoup
 import requests
